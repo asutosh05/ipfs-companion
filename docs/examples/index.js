@@ -9,7 +9,7 @@ async function test(){
         console.log(id)
         console.log(await ipfs.swarm.peers())
         //const [{ hash }] = await ipfs.add(Buffer.from('i am 007'))
-        //const data = await ipfs.cat("QmUjC5vLEEbNVH2XGNaiNAf7F2yRjJhRQuWhWQfG98E8wj")
+        const data = await ipfs.cat("QmNeJgbJxik9HXGTzEysu5NPcFodN2bHkgiELSGFzhBZuA")
         //console.log(hash)
         //console.log(data.toString()) 
         
