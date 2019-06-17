@@ -11,7 +11,7 @@ async function test(){
         //const [{ hash }] = await ipfs.add(Buffer.from('i am 007'))
         const data = await ipfs.cat("QmNeJgbJxik9HXGTzEysu5NPcFodN2bHkgiELSGFzhBZuA")
         //console.log(hash)
-        //console.log(data.toString()) 
+        console.log(data.toString()) 
         
       } else {
         // Fallback
