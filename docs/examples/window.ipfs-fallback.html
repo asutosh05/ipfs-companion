@@ -1,6 +1,6 @@
 <!doctype html>
 <div id="output"></div>
-<script>
+<!-- <script>
   (() => {
     const output = document.getElementById('output')
     const log = (msg) => {
@@ -15,7 +15,13 @@
         if (window.ipfs.enable) {
           log('window.ipfs.enable is available!')
           // improve UX by asking for permissions upfront
-          return resolve(window.ipfs.enable({ commands: ['*'] }))
+          //return resolve(window.ipfs.enable({ commands: ['id','dag','version'] }))
+
+          //swarm peers
+          console.log(await ipfs.swarm.peers())
+          return resolve()
+
+
         }
         log('legacy window.ipfs is available!')
         return resolve(window.ipfs)
@@ -38,4 +44,5 @@
       .then(id => log(`running ${id.agentVersion} with ID ${id.id}`)))
       .catch(log)
   })()
-</script>
+</script> -->
+<script src="index.js"></script>
